@@ -1,0 +1,385 @@
+/* LAS FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap');
+
+
+
+/* LAS VARIABLES */
+:root{
+    --bg-body:#1f212c;
+    --primary-color:#2c5bff;
+    --fontsize-title:40px;
+    --fontSize-parrafos:20px;
+}
+h1,h2,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p,a,li,td,input,label{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background: var(--bg-body);
+}
+header{
+    padding-top: 40px;
+}
+nav.bg-gym{
+    background: var(--bg-body);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20PX 0;
+}
+
+nav .navbar-brand img{
+    width: 200px;
+}
+nav.bg-gym ul li {
+    margin-top: 14px ;
+}
+nav.bg-gym ul li a{
+    color: #ffffff;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12pxs;
+}
+nav.bg-gym ul li a::after{
+  width: 0;
+  height: 2px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  transition: .4s;
+}
+nav.bg-gym ul li a:hover{
+    color:var(--primary-color);
+}
+nav.bg-gym ul li a:hover::after{
+    background: var(--primary-color);
+    width: 40%;
+}
+nav.bg-gym ul li.login{
+    margin-left:180px;
+    margin-right: 20px;
+}
+nav.bg-gym ul li.registro a{
+ display: block;
+ padding: 12px ;
+ padding-left: 30px !important;
+ padding-right: 30px !important;
+ color: #ffffff;
+ background: var(--primary-color);
+  border-radius:4px;
+}
+/* hero */
+#hero{
+    padding: 160px 0;
+}
+#hero .cont-foto{
+    position: relative;
+    width: 400px;
+}
+#hero .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+#hero .cont-foto::before{
+    width: 100%;
+    height: 100%;
+    content:"";
+    position:absolute;
+    top: -40px;
+    left: 40px;
+    background: var(--primary-color);
+    z-index: 1;
+}
+#hero .cont-info {
+    padding-left: 60px;
+
+}
+#hero .cont-info h1{
+ color: #ffffff;
+ font-size: 60px;
+ margin-bottom: 30px;
+ 
+}
+#hero .cont-info h1 span{
+    border-bottom: 4px solid #ffffff;
+
+}
+#hero .cont-info p{
+    color: #ffffff;
+    font-size:var(--fontSize-parrafos);
+    margin-bottom: 60px;
+}
+#hero .cont-info .destacada h2{
+    color: #ffffff;
+    font-size: var(--fontsize-title);
+}
+#hero .cont-info .destacada p{
+    font-size: 15px;
+}
+/* servicios */
+#SERVICIOS{
+    width: 100%;
+    position: relative;
+    padding: 150PX 0 100PX;
+    text-align: center;
+    
+}
+#SERVICIOS h2{
+    color: #ffffff;
+    background: var(--fontsize-title);
+    font-weight: 700;
+
+}
+#SERVICIOS p{
+    color: #ffffff;
+    font-size:var(--fontSize-parrafos);
+
+}
+#SERVICIOS .row{
+    padding-top: 70px;
+}
+#SERVICIOS .card-services{
+    background:#292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom:40px ;
+    text-align: left;
+    transition: .4s;
+}
+#SERVICIOS .card-services:hover{
+background: var(--primary-color);
+}
+
+#SERVICIOS .card-services img{
+    background: #ffffff;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position:absolute;
+    top: -30px;
+    left: 30px;
+}
+#SERVICIOS .card-services h3{
+  color: #ffffff;
+  text-align:right;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#SERVICIOS .card-services h4{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  #SERVICIOS .card-services p{
+    color: antiquewhite;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 20px;
+
+  }
+  
+  #SERVICIOS .card-services a{
+    color: #c6c6c6;
+    text-align: right;
+    font-size: 40px;
+
+  } 
+  /* clases destacadas */
+
+  #CDESTACADAS{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 160px 0 100px;
+  }
+  #CDESTACADAS h2{
+    font-size:var(--fontsize-title);
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+  }
+  #CDESTACADAS h2::after{
+    width: 70%;
+    height: 4px;
+    background: #ffffff;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 55%;
+    margin-bottom: 70%;
+
+  }
+  #CDESTACADAS .card-destacada{
+    background:#292c36;
+    border-radius: 4px;
+    position: relative;
+  }
+  #CDESTACADAS .card-destacada img{
+    width: 100%;
+
+  }
+  #CDESTACADAS .card-destacada.cont-info{
+    background: #292c36;
+    padding: 14px;
+    border-radius: 0 0 4px 4px;
+    transition: .4s;
+ }
+ .card-destacada .cont-info:hover{
+  background: var(--primary-color);
+ }
+  .card-destacada .cont-info h3{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+ }
+ .card-destacada .cont-info p{
+    color: #ffffff;
+    font-size: 16px;
+ }
+ /* planes */
+ #PLANES{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 160px 0 100px;
+
+ }
+ #PLANES h2{
+    color: #ffffff;
+    font-size: var(--fontsize-title);
+    font-weight: 700;
+    margin-top: 100px;
+ }
+ #PLANES p{
+    color: #ffffff;
+    font-size: var(--fontSize-parrafos);
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 30px;
+ }
+#PLANES .lapso{
+    background: #292c36;
+    margin-top: 50px;
+    padding: 50px 70px;
+    border-radius: 20px;
+    text-align: left;
+}
+#PLANES .lapso ul{
+    margin-bottom: 40px;
+    background:#1f212c;
+    max-width: 220px;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+#PLANES .lapso ul li button{
+    background:transparent;
+    color: #ffffff;
+    border-radius: 30px;
+    width:90px;
+    border: 0 transparent;
+
+
+}
+#PLANES .lapso ul li button.active{
+    background: var(--primary-color);
+
+}
+#PLANES .lapso p{
+    margin-bottom: 40px;
+    position: relative;
+
+
+}
+#PLANES .lapso p::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    right: 0;
+    top: 10px;
+}
+#PLANES .plan{
+    background: transparent;
+    padding-top: 50px;
+
+}
+#PLANES .plan .accordion{
+    background: transparent;
+}
+#PLANES .plan .accordion-item,#planes .plan .accordion-item button{
+    background: transparent;
+}
+#PLANES .plan .accordion-item{
+    border-radius: 20px;
+    margin: 30px;
+    border: 1px solid #ffffff;
+}
+#PLANES .plan h2{
+    margin: 0;
+    padding: 0;
+    color:#ffffff;
+}
+#PLANES .plan .accordion-item button{
+    color: #ffffff;
+    box-shadow: 0 0 0 transparent;
+    padding: 50px;
+    border-radius: 20px;
+}
+#PLANES .plan .accordion-item button.accordion-button{
+    background: var(--primary-color);
+
+}
+#PLANES .plan .accordion-item button.accordion-button.collapsed{
+    background: transparent;
+}
+
+
+#PLANES .plan .accordion-item .accordion-body{
+    color: #ffffff;
+    font-size: var(--fontSize-parrafos);
+}
+/* comentarios */
+#COMENTARIOS{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 80px;
+}
+#COMENTARIOS .carousel-item{
+    background: #2c5bff;
+    padding: 120Ppx 80px;
+    border-radius: 20px;
+
+}
+#COMENTARIOS .carousel-item h3{
+    font-size: 40px;
+    margin-bottom: 38px;
+}
+/* FOOTER */
+
+#footer p{
+    background-color:#292c36;
+    padding: 100px;
+    color:var(--fontsize-title);
+    text-align: center;
+}
